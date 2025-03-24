@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react'
+import './services.css'
 import Cards from "../Cards/Cards";
-import './testemonialStyle.css'
 
-function Testomonials() {
+
+function Services() {
   return (
-    <section
-      className="testomonials"
-      id="testimonies"
+    <div>
+          <section
+      className="services"
+      id="services"
       style={{
         minHeight: "100vh",
         backgroundColor: "#080808",
@@ -18,7 +20,7 @@ function Testomonials() {
       }}
     >
       <h1 className="text-center text-light" style={{ marginBottom: "1rem" }}>
-        Testimonials
+      Services
       </h1>
       <div
         style={{
@@ -35,7 +37,9 @@ function Testomonials() {
         <Cards cardImg="" cardText="" cardName="" />
       </div>
     </section>
-  );
+      
+    </div>
+  )
 }
 
-export default Testomonials;
+export default Services

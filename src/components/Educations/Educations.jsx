@@ -69,7 +69,7 @@ function Educations() {
   ];
 
   return (
-    <div className="educations-section">
+    <section className="educations-section" id="edu">
       <h1 className="educations-title">Education</h1>
 
       <div className="timeline-container">
@@ -83,7 +83,7 @@ function Educations() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

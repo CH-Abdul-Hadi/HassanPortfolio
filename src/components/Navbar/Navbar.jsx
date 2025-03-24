@@ -26,14 +26,7 @@ function Navbar() {
   return (
     <nav
       className="navbar navbar-expand-lg navbar-dark p-3"
-      style={{
-        // backgroundColor: "#060606",
-        height: "3rem",
-        position: "sticky",
-        top: 0,
-        zIndex: 1000,
-        boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
-      }}
+  
     >
       <div className="container-fluid px-4">
         <a
@@ -59,7 +52,7 @@ function Navbar() {
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a
-                href="/"
+                href="#home"
                 style={getLinkStyle("Home")}
                 className="nav-link"
                 onClick={() => handleNavClick("Home")}
@@ -69,7 +62,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                href="/education"
+                href="#edu"
                 style={getLinkStyle("Education")}
                 className="nav-link"
                 onClick={() => handleNavClick("Education")}
@@ -79,17 +72,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                href="/testimonies"
-                style={getLinkStyle("Testimonies")}
-                className="nav-link"
-                onClick={() => handleNavClick("Testimonies")}
-              >
-                Testimonies
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                href="/services"
+                href="#services"
                 style={getLinkStyle("Services")}
                 className="nav-link"
                 onClick={() => handleNavClick("Services")}
@@ -99,7 +82,18 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <a
-                href="/contact"
+                href="#testimonies"
+                style={getLinkStyle("Testimonies")}
+                className="nav-link"
+                onClick={() => handleNavClick("Testimonies")}
+              >
+                Testimonies
+              </a>
+            </li>
+        
+            <li className="nav-item">
+              <a
+                href="#contact"
                 style={getLinkStyle("Contact")}
                 className="nav-link"
                 onClick={() => handleNavClick("Contact")}
