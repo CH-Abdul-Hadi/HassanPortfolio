@@ -1,0 +1,140 @@
+.formContainer {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background-color: #171717;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.formHeading {
+  text-align: center;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: transparent;
+
+}
+
+.formField {
+  display: flex;
+  border-radius: 10px;
+  padding: 0.8rem;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.inputField {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ccd6f6;
+  font-size: 1rem;
+  min-width: 0; /* Prevent overflow */
+}
+
+textarea.inputField {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.sendMessageBtn {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: #00feec;
+  font-weight: bold;
+  border: 1px solid #00feec;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+/* Hover effects for desktop only */
+@media (hover: hover) {
+  .sendMessageBtn:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  .formCard1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+  }
+}
+
+.sendMessageBtn:active {
+  transform: scale(0.98);
+}
+
+.formCard1 {
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .form {
+    padding: 1rem;
+    border-radius: 15px;
+  }
+
+  .formHeading {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+
+  .formField {
+    padding: 0.6rem;
+  }
+
+  .sendMessageBtn {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 0.5rem;
+  }
+
+  .formHeading {
+    font-size: 1.2rem;
+  }
+
+  .inputField {
+    font-size: 0.9rem;
+  }
+
+  textarea.inputField {
+    min-height: 80px;
+  }
+}
+.result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}

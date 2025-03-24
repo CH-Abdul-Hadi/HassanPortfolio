@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+    .hero img {
+      height: 10rem;
+      width: 10rem;
+    }
+    
+    .hero .fs-1 {
+      font-size: 2rem !important;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero img {
+      height: 8rem;
+      width: 8rem;
+    }
+    
+    .hero .fs-1 {
+      font-size: 1.5rem !important;
+    }
+    
+    .container {
+      padding: 1rem;
+    }
+  }

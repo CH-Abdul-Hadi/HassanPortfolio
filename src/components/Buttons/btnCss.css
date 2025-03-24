@@ -1,0 +1,7 @@
+btnHover:hover {
+  transition: 3s ease-in;
+  -webkit-transition: 3s ease-in;
+  -moz-transition: 3s ease-in;
+  -ms-transition: 3s ease-in;
+  -o-transition: 3s ease-in;
+}
