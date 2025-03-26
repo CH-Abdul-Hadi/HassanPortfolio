@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './navStyle.css'
+import "./navStyle.css";
 
 function Navbar() {
   // State to track active link
@@ -24,10 +24,7 @@ function Navbar() {
   });
 
   return (
-    <nav
-      className="navbar navbar-expand-lg navbar-dark p-3"
-  
-    >
+    <nav className="navbar navbar-expand-lg navbar-dark p-3">
       <div className="container-fluid px-4">
         <a
           className="navbar-brand text-white"
@@ -90,7 +87,7 @@ function Navbar() {
                 Testimonies
               </a>
             </li>
-        
+
             <li className="nav-item">
               <a
                 href="#contact"
@@ -104,8 +101,6 @@ function Navbar() {
           </ul>
         </div>
       </div>
-
-
     </nav>
   );
 }
