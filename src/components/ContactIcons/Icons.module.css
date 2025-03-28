@@ -20,7 +20,7 @@
 }
 
 .socialLink:hover .socialIcon {
-  color: wheat;
+  color: #00feec;
   transform: scale(1.3);
   -webkit-transform: scale(1.3);
   -moz-transform: scale(1.3);
