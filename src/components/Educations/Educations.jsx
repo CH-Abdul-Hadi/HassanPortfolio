@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import "./eduStyle.css";
 
@@ -25,7 +23,7 @@ const TimelineItem = ({ year, title, content, isLast }) => {
       {/* Pill-shaped content container */}
       <div
         className="timeline-content"
-        style={{ background: "#1a1a1a", borderColor: "#333333" }}
+        style={{ background: "#1a1a1a", borderColor: "#333333", border: 'solid 2px #00ffee' }}
       >
         <h3 className="timeline-title" style={{ background: "inherit" }}>
           {title}

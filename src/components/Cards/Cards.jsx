@@ -1,5 +1,5 @@
 import React from "react";
-import './cardStyle.css'
+import "./cardStyle.css";
 import profileImg from "../../assets/profileHa.jpg";
 
 const Cards = (props) => {
@@ -17,6 +17,7 @@ const Cards = (props) => {
         alignItems: "center",
         padding: "1rem",
         margin: "0 auto",
+        border: "solid 2px #00ffee",
       }}
     >
       <img
