@@ -1,68 +1,8 @@
-// import React from "react";
-// import profile from "../../assets/profile.png";
-// import Icons from "../Icons/Icons";
-// import Buttons from "../Buttons/Buttons";
-// function Hero() {
-//   return (
-//     <section className="hero">
-//       <div
-//         className="container"
-//         style={{
-//           height: "calc(100vh - 3rem)",
-//           justifyContent: "center",
-//           backgroundColor: "#080808",
-//         }}
-//       >
-//         <div className="d-flex flex-column ">
-//           <div className="col">
-//             <img
-//               className="rounded-circle "
-//               src={profile}
-//               style={{
-//                 height: "13rem",
-//                 width: "13rem",
-//                 marginTop: "2.5rem",
-//                 marginLeft: "2.3rem",
-//                 backgroundColor: "#069B95",
-//                 boxShadow: "0 0 25px #00FCEE",
-//                 transition: "0.4s ease-in-out",
-//               }}
-//               alt="Profile image"
-//             />
-//           </div>
-//           <div
-//             className="col pt-3 ps-3  text-light"
-//             style={{
-//               background: "transparent",
-//               marginTop: "0.5rem",
-//               zIndex: "100",
-//             }}
-//           >
-//             <span className="fs-1">
-//               Hi, It's <span style={{ color: "#00FCEE" }}>Hasaan </span>
-//             </span>
-//             <br />
-//             <span>I'm a </span>
-//             <span style={{ color: "#00FCEE" }}>Web Developer</span>
-//           </div>
-//           <div className="col pt-2 ps-3 ">
-//             <Icons />
-//           </div>
-//           <div className="col pt-3 ps-3 d-flex gap-3 ">
-//             <Buttons btn="Hire me" btnStyle="btnStyle1" />
-//             <Buttons btn="Hire me" btnStyle="btnStyle2" />
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Hero;
 import React from "react";
-import profile from "../../assets/profile.png";
+import profile from "../../assets/profileImg.jpg";
 import Icons from "../Icons/Icons";
 import Buttons from "../Buttons/Buttons";
+import Resume from '../../assets/Resume.pdf'
 import "./heroStyle.css";
 
 function Hero() {
@@ -116,7 +56,7 @@ function Hero() {
           </div>
           <div className="col d-flex  gap-3 justify-content-center">
             <Buttons btn="Hire me" btnStyle="btnStyle1" />
-            <Buttons btn="Hire me" btnStyle="btnStyle2" />
+            <a href={Resume}><Buttons btn="My resume"  btnStyle="btnStyle2" /></a>
           </div>
         </div>
       </div>

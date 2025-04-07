@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark p-3">
-      <div className="container-fluid px-4">
+      <div className="container-fluid d-flex justify-content-around px-4">
         <a
           className="navbar-brand text-white"
           href="/"
@@ -45,8 +45,8 @@ function Navbar() {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+        <div className="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
               <a
                 href="#home"
@@ -55,6 +55,16 @@ function Navbar() {
                 onClick={() => handleNavClick("Home")}
               >
                 Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                href="#about"
+                style={getLinkStyle("About")}
+                className="nav-link"
+                onClick={() => handleNavClick("About")}
+              >
+                About
               </a>
             </li>
             <li className="nav-item">
