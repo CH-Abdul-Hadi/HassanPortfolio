@@ -56,7 +56,7 @@ function Hero() {
           </div>
           <div className="col d-flex  gap-3 justify-content-center">
             <Buttons btn="Hire me" btnStyle="btnStyle1" />
-            <a href={Resume}><Buttons btn="My resume"  btnStyle="btnStyle2" /></a>
+            <a href={Resume} target="_blank"><Buttons btn="My resume"  btnStyle="btnStyle2" /></a>
           </div>
         </div>
       </div>
