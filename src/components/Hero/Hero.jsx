@@ -78,7 +78,7 @@ function Hero() {
         >
           <div className="col mb-4">
             <img
-              ref={imgRef}
+              ref={null}
               className="rounded-circle"
               src={profile}
               style={{
