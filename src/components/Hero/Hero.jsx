@@ -17,7 +17,11 @@ function Hero() {
     const tl = gsap.timeline({ defaults: { ease: "power2.out", duration: 1 } });
 
     tl.from(containerRef.current, { opacity: 0 })
-      .from(imgRef.current, { y: -50, opacity: 0 }, "-=0.5")
+      .fromTo(
+        imgRef.current,
+        { opacity: 0, y: -50, scale: 0.8 },
+        { opacity: 1, y: 0, scale: 1, duration: 1 }
+      )
       .from(textRef.current, { y: 30, opacity: 0 }, "-=0.7")
       .from(iconRef.current, { scale: 0, opacity: 0 }, "-=0.6")
       .from(buttonRef.current.children, {
@@ -57,7 +61,7 @@ function Hero() {
                 boxShadow: "0 0 25px #00FCEE",
                 transition: "0.4s ease-in-out",
               }}
-              alt="Profile image"
+              alt="Profile"
             />
           </div>
 
