@@ -1,12 +1,15 @@
 import React from "react";
 import Cards from "../Cards/Cards";
 import './testemonialStyle.css'
+import crewai from '../../assets/crewai.png'
+import deeplearing from '../../assets/deeplearning.png'
+import microsoft from '../../assets/microsoft.svg'
 
 function Testomonials() {
   return (
     <section
       className="testomonials"
-      id="testimonies"
+      id="certificates"
       style={{
         minHeight: "100vh",
         backgroundColor: "#080808",
@@ -18,7 +21,7 @@ function Testomonials() {
       }}
     >
       <h1 className="text-center text-light" style={{ marginBottom: "1rem" }}>
-        Testimonials
+       Certificates
       </h1>
       <div
         style={{
@@ -30,9 +33,9 @@ function Testomonials() {
           maxWidth: "1200px",
         }}
       >
-        <Cards cardImg="" cardText="" cardName="" />
-        <Cards cardImg="" cardText="" cardName="" />
-        <Cards cardImg="" cardText="" cardName="" />
+        <Cards cardImg={crewai} cardName="CrewAI" cardText="Multi AI Agents System " />
+        <Cards cardImg={microsoft} cardName="Microsoft" cardText="AI Agentic Design Pattern with Autogen " />
+        <Cards cardImg={deeplearing} cardName="DeepLearning.AI" cardText="AI Python for Beginner " />
       </div>
     </section>
   );

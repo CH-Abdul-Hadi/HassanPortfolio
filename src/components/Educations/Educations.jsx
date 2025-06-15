@@ -47,27 +47,27 @@ const TimelineItem = ({ year, title, content, isLast }) => {
 function Educations() {
   const educationData = [
     {
-      year: "2023",
-      title: "Advanced Web Development Certification",
+      year: "2023 - present",
+      title: "Presidential Initiative for Artificial Intelligence & Computing",
       content:
-        "Completed intensive training in modern frontend frameworks including React, Vue, and Node.js backend integration.",
+        "Completed intensive training under the Presidential Initiative for Artificial Intelligence & Computing, focusing on AI concepts, machine learning models, and real-world applications.",
     },
     {
-      year: "2022",
+      year: "2022 - 2026 ",
       title: "Bachelor of Computer Science",
       content:
-        "Graduated with honors, specializing in software engineering and database management systems.",
+        "Specializing in artificial intelligence, machine learning, and data-driven systems from Agriculture University Peshawar. ",
     },
     {
-      year: "2021",
-      title: "Web Development Bootcamp",
+      year: "2020 - 2022",
+      title: "Intermediate in Computer Science",
       content:
-        "Learned fundamentals of HTML, CSS, JavaScript, and responsive design principles.",
+        "Completed intermediate studies in Computer Science, building a strong foundation in computing principles and problem-solving techniques.",
     },
   ];
 
   return (
-    <section className="educations-section" id="edu">
+    <section className="educations-section" id="education">
       <h1 className="educations-title">Education</h1>
 
       <div className="timeline-container">
