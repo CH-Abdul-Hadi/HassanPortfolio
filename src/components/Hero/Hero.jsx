@@ -8,7 +8,7 @@ import "./heroStyle.css";
 
 function Hero() {
   const containerRef = useRef(null);
-  const imgRef = useRef(null);
+  // const imgRef = useRef(null);
   const textRef = useRef(null);
   const iconRef = useRef(null);
   const buttonRef = useRef(null);
@@ -17,11 +17,11 @@ function Hero() {
     const tl = gsap.timeline({ defaults: { ease: "power3.out", duration: 1.2 } });
 
     tl.from(containerRef.current, { opacity: 0, duration: 0.5 })
-      .fromTo(
-        imgRef.current,
-        { opacity: 0, y: -60, scale: 0.7, rotate: 5 },
-        { opacity: 1, y: 0, scale: 1, rotate: 0, duration: 1.5, ease: "elastic.out(1, 0.5)" }
-      )
+      // .fromTo(
+      //   imgRef.current,
+      //   { opacity: 0, y: -60, scale: 0.7, rotate: 5 },
+      //   { opacity: 1, y: 0, scale: 1, rotate: 0, duration: 1.5, ease: "elastic.out(1, 0.5)" }
+      // )
       .from(textRef.current, { y: 40, opacity: 0, duration: 1 }, "-=1")
       .from(iconRef.current, { scale: 0.8, opacity: 0, duration: 0.8 }, "-=0.8")
       .from(buttonRef.current.children, {
@@ -32,30 +32,30 @@ function Hero() {
       }, "-=0.6");
 
     // Hover animation for the image
-    const imgElement = imgRef.current;
-    gsap.set(imgElement, { transformOrigin: "center" });
-    imgElement.addEventListener("mouseenter", () => {
-      gsap.to(imgElement, {
-        scale: 1.05,
-        boxShadow: "0 0 35px #00FCEE",
-        duration: 0.3,
-        ease: "power2.out"
-      });
-    });
-    imgElement.addEventListener("mouseleave", () => {
-      gsap.to(imgElement, {
-        scale: 1,
-        boxShadow: "0 0 25px #00FCEE",
-        duration: 0.3,
-        ease: "power2.out"
-      });
-    });
+  //   const imgElement = imgRef.current;
+  //   gsap.set(imgElement, { transformOrigin: "center" });
+  //   imgElement.addEventListener("mouseenter", () => {
+  //     gsap.to(imgElement, {
+  //       scale: 1.05,
+  //       boxShadow: "0 0 35px #00FCEE",
+  //       duration: 0.3,
+  //       ease: "power2.out"
+  //     });
+  //   });
+  //   imgElement.addEventListener("mouseleave", () => {
+  //     gsap.to(imgElement, {
+  //       scale: 1,
+  //       boxShadow: "0 0 25px #00FCEE",
+  //       duration: 0.3,
+  //       ease: "power2.out"
+  //     });
+  //   });
 
-    // Cleanup event listeners on unmount
-    return () => {
-      imgElement.removeEventListener("mouseenter", () => {});
-      imgElement.removeEventListener("mouseleave", () => {});
-    };
+  //   // Cleanup event listeners on unmount
+  //   return () => {
+  //     imgElement.removeEventListener("mouseenter", () => {});
+  //     imgElement.removeEventListener("mouseleave", () => {});
+  //   };
   }, []);
 
   return (
@@ -78,7 +78,7 @@ function Hero() {
         >
           <div className="col mb-4">
             <img
-              ref={null}
+              // ref={imgRef}
               className="rounded-circle"
               src={profile}
               style={{
