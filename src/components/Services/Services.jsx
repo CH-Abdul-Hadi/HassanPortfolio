@@ -31,9 +31,10 @@ function Services() {
             maxWidth: "1200px",
           }}
         >
-          <Cards cardImg="" cardText="" cardName="" />
-          <Cards cardImg="" cardText="" cardName="" />
-          <Cards cardImg="" cardText="" cardName="" />
+          <Cards cardImg="" cardText=" OpenAI Agent SDK, CrewAI, LangGraph, LangChain" cardName="AI & Agent Frameworks" />
+          <Cards cardImg="" cardText="LLMs (ChatGPT, Grok, Deepseek), Prompt Engineering" cardName="Machine Learning & AI" />
+          <Cards cardImg="" cardText="FastAPI, Kafka" cardName="Event Driven & Streaming" />
+          <Cards cardImg="" cardText="NoSQL & Python" cardName="Databases & languages" />
         </div>
       </section>
     </div>

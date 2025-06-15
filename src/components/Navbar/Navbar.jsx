@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./navStyle.css";
+import logo from "../../assets/11.png";
 
 function Navbar() {
   // State to track active link
@@ -28,10 +29,15 @@ function Navbar() {
       <div className="container-fluid d-flex justify-content-around px-4">
         <a
           className="navbar-brand text-white"
+          style={{ background: "inherit" }}
           href="/"
           onClick={() => handleNavClick("Home")}
         >
-          Hasaan <span style={{ color: "#00FCEE" }}>Qurashi</span>
+          {/* Hasaan{" "}
+          <span style={{ color: "#00FCEE",  }}>
+            Qurashi
+          </span> */}
+          <img src={logo} width={130} alt="" />
         </a>
         <button
           className="navbar-toggler"

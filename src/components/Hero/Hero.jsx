@@ -45,11 +45,11 @@ function Hero() {
             }}
           >
             <span className="fs-1">
-              Hi, It's <span style={{ color: "#00FCEE" }}>Hasaan </span>
+              Hi, It's <span style={{ color: "#00FCEE" }}>Hasaan Qureshi </span>
             </span>
             <br />
             <span>I'm a </span>
-            <span style={{ color: "#00FCEE" }}>Web Developer</span>
+            <span style={{ color: "#00FCEE" }}>An innovative AI Engineer passionate</span>
           </div>
           <div className="col mb-4">
             <Icons />
