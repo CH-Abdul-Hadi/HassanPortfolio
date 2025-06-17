@@ -21,7 +21,7 @@ function Navbar() {
   });
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark p-3">
+    <nav className="navbar navbar-expand-lg navbar-dark p-3 px-5">
       <div className="container-fluid">
         <a
           className="navbar-brand text-white"

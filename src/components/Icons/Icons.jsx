@@ -6,23 +6,28 @@ import { faWhatsapp, faLinkedin, faGithub, faInstagram } from "@fortawesome/free
 function Icons() {
   const buttonStyle = {
     borderRadius: "50px",
-    border: "1px solid #00FCEE", // Outline effect
-    color: "#00FCEE", // Text/icon color
-    backgroundColor: "transparent", // Transparent background
-    padding: "0.375rem 0.75rem", // Default Bootstrap padding
+    border: "1px solid #00FCEE",
+    color: "#00FCEE",
+    backgroundColor: "transparent",
+    padding: "0.375rem 0.75rem",
     display: "inline-flex",
     alignItems: "center",
     justifyContent: "center",
-    width: "40px", // Adjust size as needed
-    height: "40px",
+    width: "48px", // Increased from 40px
+    height: "48px", // Increased from 40px
+    fontSize: "1.5rem", // Larger icon size
     textDecoration: "none",
-    transition: "all 0.2s", // Smooth transition like Bootstrap
+    margin: "0 8px", // Custom margin for consistent spacing
+    transition: "transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease",
   };
 
-  // Hover effect using CSS in JSX
+  // Hover effect with scale, glow, and background
   const hoverStyle = `
-    .custom-btn:hover {
-      background-color: rgba(0, 252, 238, 0.1); // Light background on hover
+    a.custom-btn:hover {
+      transform: scale(1.1);
+      border-color: #00FCEE;
+      background-color: rgba(0, 252, 238, 0.2);
+      box-shadow: 0 0 8px rgba(0, 252, 238, 0.6);
       color: #00FCEE;
       text-decoration: none;
     }
@@ -33,8 +38,8 @@ function Icons() {
       <style>{hoverStyle}</style>
       <div>
         <a
-          href="tel:+1234567890"
-          className="custom-btn btn-floating m-1"
+          href="https://www.linkedin.com/in/your-profile"
+          className="custom-btn"
           role="button"
           style={buttonStyle}
         >
@@ -42,23 +47,23 @@ function Icons() {
         </a>
         <a
           href="https://wa.me/1234567890"
-          className="custom-btn btn-floating m-1"
+          className="custom-btn"
           role="button"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faWhatsapp} />
         </a>
         <a
-          href="mailto:example@email.com"
-          className="custom-btn btn-floating m-1"
+          href="https://github.com/your-username"
+          className="custom-btn"
           role="button"
           style={buttonStyle}
         >
           <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
-          href="mailto:example@email.com"
-          className="custom-btn btn-floating m-1"
+          href="https://www.instagram.com/your-username"
+          className="custom-btn"
           role="button"
           style={buttonStyle}
         >

@@ -64,7 +64,7 @@ function Hero() {
             </span>
             <br />
             <span>I'm a </span>
-            <span style={{ color: "#00FCEE" }}>An innovative AI Engineer passionate</span>
+            <span style={{ color: "#00FCEE" }}>An pursuing AI Engineer passionate</span>
           </div>
 
           <div ref={iconRef} className="col mb-4">

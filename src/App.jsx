@@ -6,21 +6,21 @@ import Educations from "./components/Educations/Educations";
 import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
 import AboutMe from "./components/AboutMe/AboutMe";
-import { AnimatePresence } from "framer-motion";
-import WelcomeScreen from "./components/WelcomeScreen";
+// import { AnimatePresence } from "framer-motion";
+// import WelcomeScreen from "./components/WelcomeScreen";
 
 function App() {
-  const [showWelcome, setShowWelcome] = useState(true); // initialize state
+  // const [showWelcome, setShowWelcome] = useState(true); // initialize state
 
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {showWelcome && (
           <WelcomeScreen onLoadingComplete={() => setShowWelcome(false)} />
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
-      {!showWelcome && (
+      {/* {!showWelcome && ( */}
         <>
           <Navbar />
           <Hero />
@@ -30,7 +30,7 @@ function App() {
           <Testomonials />
           <Contact />
         </>
-      )}
+      {/* )} */}
     </>
   );
 }
