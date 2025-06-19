@@ -1,10 +1,10 @@
 import React from "react";
 import "./services.css";
 import Cards from "../Cards/Cards";
-import ai from '../../assets/ai.png'
-import llm from '../../assets/llm.jpeg'
-import eda from '../../assets/eda.jpeg'
-import code from '../../assets/code.png'
+import ai from "../../assets/ai.png";
+import llm from "../../assets/llm.jpeg";
+import eda from "../../assets/eda.jpeg";
+import code from "../../assets/code.png";
 function Services() {
   return (
     <div>
@@ -34,10 +34,26 @@ function Services() {
             maxWidth: "1200px",
           }}
         >
-          <Cards cardImg={ai} cardText=" OpenAI Agent SDK, CrewAI, LangGraph, LangChain" cardName="AI & Agent Frameworks" />
-          <Cards cardImg={llm} cardText="LLMs (ChatGPT, Grok, Deepseek), Prompt Engineering" cardName="Machine Learning & AI" />
-          <Cards cardImg={eda} cardText="FastAPI, Kafka" cardName="Event Driven & Streaming" />
-          <Cards cardImg={code} cardText="NoSQL & Python" cardName="Databases & languages" />
+          <Cards
+            cardImg={ai}
+            cardText=" OpenAI Agent SDK, CrewAI, LangGraph, LangChain"
+            cardName="AI & Agent Frameworks"
+          />
+          <Cards
+            cardImg={llm}
+            cardText="LLMs (ChatGPT, Grok, Deepseek), Prompt Engineering"
+            cardName="Machine Learning & AI"
+          />
+          <Cards
+            cardImg={eda}
+            cardText="FastAPI, Kafka"
+            cardName="Event Driven & Streaming"
+          />
+          <Cards
+            cardImg={code}
+            cardText="NoSQL & Python"
+            cardName="Databases & languages"
+          />
         </div>
       </section>
     </div>
