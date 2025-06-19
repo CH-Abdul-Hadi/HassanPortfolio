@@ -5,7 +5,7 @@ import "./btnCss.css";
 
 function Buttons(props) {
   const btnStyle1 = {
-    width: "6rem",
+    width: "9rem",
     height: "3rem",
     borderRadius: "2rem",
     backgroundColor: "#00fecc",

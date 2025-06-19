@@ -1,9 +1,10 @@
 import React from "react";
 import Cards from "../Cards/Cards";
-import './testemonialStyle.css'
-import crewai from '../../assets/crewai.png'
-import deeplearing from '../../assets/deeplearning.png'
-import microsoft from '../../assets/microsoft.svg'
+import "./testemonialStyle.css";
+import crewai from "../../assets/crewai.png";
+import deeplearing from "../../assets/deeplearning.png";
+import microsoft from "../../assets/microsoft.svg";
+import Slider from "../Slider/Slider";
 
 function Testomonials() {
   return (
@@ -21,9 +22,10 @@ function Testomonials() {
       }}
     >
       <h1 className="text-center text-light" style={{ marginBottom: "1rem" }}>
-       Certificates
+        Certificates
       </h1>
-      <div
+      {/* not in use */}
+      {/* <div
         style={{
           display: "flex",
           flexWrap: "wrap",
@@ -36,7 +38,10 @@ function Testomonials() {
         <Cards cardImg={crewai} cardName="CrewAI" cardText="Multi AI Agents System " />
         <Cards cardImg={microsoft} cardName="Microsoft" cardText="AI Agentic Design Pattern with Autogen " />
         <Cards cardImg={deeplearing} cardName="DeepLearning.AI" cardText="AI Python for Beginner " />
-      </div>
+      </div> */}
+      {/* not in use */}
+
+      <Slider/>
     </section>
   );
 }

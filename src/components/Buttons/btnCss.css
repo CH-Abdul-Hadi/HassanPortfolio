@@ -6,3 +6,22 @@ btnHover:hover {
   -ms-transition: 3s ease-in;
   -o-transition: 3s ease-in;
 }
+
+.btnHover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btnHover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00fecc, 0 0 5px #00fecc inset;
+}
+
+.btnHover[style*="background-color: #00fecc"]:hover {
+  background-color: #00ffd9; /* Slightly brighter for btnStyle1 */
+}
+
+.btnHover[style*="background-color: inherit"]:hover {
+  background-color: rgba(0, 254, 204, 0.1); /* Subtle fill for btnStyle2 */
+  border-color: #00ffd9; /* Brighter border for btnStyle2 */
+}
