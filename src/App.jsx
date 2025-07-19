@@ -6,7 +6,7 @@ import Educations from "./components/Educations/Educations";
 import Contact from "./components/Contact/Contact";
 import Services from "./components/Services/Services";
 import AboutMe from "./components/AboutMe/AboutMe";
-import Projects from "./components/Projects";
+import Projects from "./components/Projects/index.jsx";
 // import { AnimatePresence } from "framer-motion";
 // import WelcomeScreen from "./components/WelcomeScreen";
 
