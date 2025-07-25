@@ -14,7 +14,7 @@ const Projects = () => {
           <span className="w-full h-[2px] bg-[#1a1443]"></span>
         </div>
       </div> */}
-        <h1 className="text-center text-light sticky" style={{ marginBottom: "1rem" }}>
+        <h1 className="text-center text-light sticky-top z-[-1]" style={{ marginBottom: "1rem" }}>
         Projects
       </h1>
 
@@ -24,7 +24,7 @@ const Projects = () => {
             <div
               id={`sticky-card-${index + 1}`}
               key={index}
-              className="sticky-card w-full mx-auto max-w-2xl sticky"
+              className="sticky-card w-[80%] mx-auto max-w-2xl sticky"
             >
               <div className="box-border flex items-center justify-center rounded shadow-[0_0_30px_0_rgba(0,0,0,0.3)] transition-all duration-[0.5s]">
                 <ProjectCard project={project} />
