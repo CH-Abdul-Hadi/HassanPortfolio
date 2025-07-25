@@ -38,6 +38,7 @@ function Navbar() {
     "About",
     "Education",
     "Services",
+    "Projects",
     "Certificates",
     "Contact",
   ];
